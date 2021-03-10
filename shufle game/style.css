@@ -1,0 +1,140 @@
+body {
+	position: absolute;
+    align-items: center;
+    height: 60%;
+    width: 70%;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: translate(-50%, -50%);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+	padding: 8px;
+	background-color: thistle;
+	border-radius: 5px;
+}
+
+.stack.array9{
+	display: grid;
+	grid-template-columns: 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px;
+	border:1px solid black;
+} 
+
+.stack.array25{
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px 80px 80px;
+	border:1px solid black;
+}
+
+.stack.array16{
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px 80px;
+	border:1px solid black;
+}
+.stack button {
+	background-color: white;
+	color: green;
+	font-size: 25px;
+	font-weight: bold;
+	border: 1px, solid black;
+}
+.top {
+	margin-top:15px;
+	display: flex;
+	left:20px;
+}
+.top button {
+	margin: 25px 50px 75px 300px;
+	text-align: center;
+	border:none;
+	border: 1px solid gray;
+	display: grid;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+	padding:  5px;
+	width: 180px;
+	background-color:thistle;
+	color: green;
+}
+.dropdown  {
+	display: inline-block;
+	position: relative;
+	margin-left: 30%;
+	width: 150px;
+	color: green;
+  }
+  .dd-button {
+	display: inline-block;
+	border: 1px solid gray;
+	border-radius: 4px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 30px 10px 20px;
+	background-color: thistle;
+	color: green;
+	cursor: pointer;
+	white-space: nowrap;
+	width: 125px;
+  }
+  .dd-button:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	width: 0; 
+	height: 0; 
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid black;
+  }
+  
+  .dd-button:hover {
+	background-color:purple;
+  }
+  .dd-input {
+	display: none;
+  }
+  .dd-menu{
+	position: absolute;
+	top: 100%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 0;
+	margin: 2px 0 0 0;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+	background-color: #ffffff;
+	list-style-type: none;
+  }
+  
+  .dd-input + .dd-menu {
+	display: none;
+  } 
+  .dd-input:checked + .dd-menu {
+	display: block;
+  } 
+  .dd-menu li {
+	padding: 10px 20px;
+	cursor: pointer;
+	white-space: nowrap;
+  }
+  .dd-menu li:hover {
+	background-color: #f6f6f6;
+  }
+  .dd-menu li a {
+	display: block;
+	margin: -10px -20px;
+	padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+	padding: 0;
+	border-bottom: 1px solid #cccccc;
+  }
+ 
